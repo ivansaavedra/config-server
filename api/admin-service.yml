@@ -7,3 +7,6 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://localhost:8099/eureka/
+    instance:
+        leaseRenewalIntervalSeconds: 5
+        leaseExpirationDurationInSeconds: 5
