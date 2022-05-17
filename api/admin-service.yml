@@ -10,5 +10,5 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   instance:
-    eureka.instance.leaseRenewalIntervalInSeconds: 5
-    eureka.instance.leaseExpirationDurationInSeconds: 5
+    leaseRenewalIntervalInSeconds: 5
+    leaseExpirationDurationInSeconds: 5
