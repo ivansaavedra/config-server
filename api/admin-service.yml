@@ -2,12 +2,12 @@ server:
   port: 8090
 
 eureka:
-    instance:
-        leaseRenewalIntervalSeconds: 5
-        leaseExpirationDurationInSeconds: 5
     client:
         # enabled: false
         registerWithEureka: true
         fetchRegistry: true
         serviceUrl:
-            defaultZone: http://localhost:8099/eureka/
+            defaultZone: http://localhost:8090/eureka/
+    instance:
+        leaseRenewalIntervalSeconds: 5
+        leaseExpirationDurationInSeconds: 5
